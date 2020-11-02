@@ -194,7 +194,7 @@ if (user){
   guestbookContainer.style.display = "block";
 
   // Subscribe to the guestbook collection
-  subscribeGuestbook();
+  subscribeGuestBook();
   // Subscribe to the guestbook collection
   subscribeCurrentRSVP(user);
 }
@@ -204,7 +204,7 @@ else{
   guestbookContainer.style.display = "none";
 
   // Unsubscribe from the guestbook collection
-  unsubscribeGuestbook();
+  unsubscribeGuestBook();
   // Unsubscribe from the guestbook collection
   unsubscribeCurrentRSVP();
 
