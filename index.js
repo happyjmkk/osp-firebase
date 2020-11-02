@@ -105,9 +105,9 @@ async function main() {
       .firestore()
       .collection("guestbook")
       .orderBy("timestamp", "desc")
-      .onSnapshot(snaps => {
+      .onSnapshot((snaps) => {
         guestbook.innerHTML = "";
-        snaps.forEach(doc => {
+        snaps.forEach((doc) => {
           const entry = document.createElement("p");
           entry.textContent = doc.data().name + ": " + doc.data().text;
           guestbook.appendChild(entry);
